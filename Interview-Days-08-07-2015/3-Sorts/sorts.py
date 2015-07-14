@@ -2,7 +2,6 @@ from random import shuffle
 
 # O(n * lgn)
 
-
 def merge(items):
     """ Implementation of mergesort """
     if len(items) > 1:
@@ -33,7 +32,6 @@ def merge(items):
 
 # O(n^2)
 
-
 def bubble_sort(items):
     """ Implementation of bubble sort """
     for i in range(len(items)):
@@ -43,7 +41,6 @@ def bubble_sort(items):
     return items
 
 # One sort, that is slower than O(n^2)
-
 
 def inorder(items):
     i = 0
