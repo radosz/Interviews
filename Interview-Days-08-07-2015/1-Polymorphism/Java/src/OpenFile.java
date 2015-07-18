@@ -12,8 +12,9 @@ public class OpenFile {
 		try {
 			reader = new Scanner(new File(filePath));
 			songs = new ArrayList<String>();
-			while (reader.hasNext()){
-			    songs.add(reader.next().replace(",", ""));
+			while (reader.hasNextLine()){
+				String input = reader.nextLine();
+				songs.add(input.substring(0, input.length()-1));
 			}
 			reader.close();
 		} catch (FileNotFoundException e) {

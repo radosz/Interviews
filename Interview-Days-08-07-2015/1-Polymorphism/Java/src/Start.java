@@ -1,4 +1,4 @@
-public class start {
+public class Start {
 
 	public static void main(String[] args) {
 		Keranov keranov = new Keranov();
