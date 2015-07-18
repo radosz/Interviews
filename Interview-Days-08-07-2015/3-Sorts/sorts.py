@@ -2,6 +2,7 @@ from random import shuffle
 
 # O(n * lgn)
 
+
 def merge(items):
     """ Implementation of mergesort """
     if len(items) > 1:
@@ -15,7 +16,6 @@ def merge(items):
 
         l, r = 0, 0
         for i in range(len(items)):     # Merging the left and right list
-
             lval = left[l] if l < len(left) else None
             rval = right[r] if r < len(right) else None
 
@@ -26,11 +26,12 @@ def merge(items):
                 items[i] = rval
                 r += 1
             else:
-                raise Eitemsception(
+                raise Exception(
                     'Could not merge, sub arrays sizes do not match the main array')
     return items
 
 # O(n^2)
+
 
 def bubble_sort(items):
     """ Implementation of bubble sort """
@@ -41,6 +42,7 @@ def bubble_sort(items):
     return items
 
 # One sort, that is slower than O(n^2)
+
 
 def inorder(items):
     i = 0
