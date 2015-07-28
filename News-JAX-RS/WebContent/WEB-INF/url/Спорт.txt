@@ -1,0 +1,3 @@
+http://gong.bg/rss.php
+http://sportal.bg/uploads/rss_category_0.xml
+http://sporta.bg/rs

@@ -1,0 +1,3 @@
+http://technews.bg/rss
+http://kaldata.com/rosebud/rss.php
+http://www.mobilebulgaria.com/rss.php

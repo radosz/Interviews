@@ -1,0 +1,3 @@
+http://vesti.bg/rss.php?c=1
+http://notrial.info/feeds/noTrial
+http://www.standartnews.com/rss.php?p=2
