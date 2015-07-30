@@ -48,16 +48,19 @@ public class ReadNews {
 		
 	}
 	
-	@GET
+	@POST
 	@Path("/rest/{param}")
-	@Produces(MediaType.APPLICATION_JSON+ ";charset=utf-8")
+	@Produces(MediaType.APPLICATION_JSON+ ";charset=UTF-8")
 	@JacksonFeatures(serializationEnable =  { SerializationFeature.INDENT_OUTPUT })
-	public JsonAdapter getTrackInJSON(@PathParam("param") String category) {
+	public Response getTrackInJSON(@PathParam("param") String category) {
 		JsonAdapter news = new JsonAdapter();
 		String folder = sc.getRealPath("/WEB-INF")+"/url/";
 		String path = folder+category+".txt";
 		news.getJson(path);
-		return news;
- 
+		try{
+			return Response.status(200).entity(news).build();
+		}catch(NullPointerException e){
+			return Response.status(400).build();
+		}
 	}
 }
